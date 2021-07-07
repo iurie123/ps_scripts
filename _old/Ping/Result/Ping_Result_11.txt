@@ -1,0 +1,45 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210120150143
+Username: GROUP\Iurie.Topor
+RunAs User: GROUP\Iurie.Topor
+Configuration Name: 
+Machine: P412B (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'D:\new_IT\Z_TMP\Scripts\PS\Ping\ping.ps1'
+Process ID: 22360
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_11.txt
+01/20/2021 15:01:43 | 192.168.101.11 is Pinging
+01/20/2021 15:01:43 | 192.168.101.12 is Pinging
+01/20/2021 15:01:44 | 192.168.101.13 not Pinging
+01/20/2021 15:01:46 | 192.168.101.14 not Pinging
+01/20/2021 15:01:46 | 192.168.101.15 is Pinging
+01/20/2021 15:01:47 | 192.168.101.16 not Pinging
+01/20/2021 15:01:49 | 192.168.101.17 not Pinging
+01/20/2021 15:01:50 | 192.168.101.18 not Pinging
+01/20/2021 15:01:51 | 192.168.101.19 is Pinging
+01/20/2021 15:01:51 | 192.168.101.20 is Pinging
+01/20/2021 15:01:52 | 192.168.101.21 not Pinging
+01/20/2021 15:01:54 | 192.168.101.22 not Pinging
+01/20/2021 15:01:55 | 192.168.101.23 not Pinging
+01/20/2021 15:01:57 | 192.168.101.24 not Pinging
+01/20/2021 15:01:57 | 192.168.101.25 is Pinging
+01/20/2021 15:01:58 | 192.168.101.26 not Pinging
+01/20/2021 15:02:00 | 192.168.101.27 not Pinging
+01/20/2021 15:02:00 | 192.168.101.28 is Pinging
+01/20/2021 15:02:01 | 192.168.101.29 not Pinging
+01/20/2021 15:02:02 | 192.168.101.30 not Pinging
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20210120150203
+**********************

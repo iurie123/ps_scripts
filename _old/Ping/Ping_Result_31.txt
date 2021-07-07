@@ -1,0 +1,1430 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210129133838
+Username: GROUP\Iurie.Topor
+RunAs User: GROUP\Iurie.Topor
+Configuration Name: 
+Machine: P412B (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 16620
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt
+01/29/2021 13:38:39 | 192.168.101.31 not Pinging
+01/29/2021 13:38:41 | 192.168.101.32 not Pinging
+01/29/2021 13:38:42 | 192.168.101.33 not Pinging
+01/29/2021 13:38:44 | 192.168.101.34 not Pinging
+01/29/2021 13:38:45 | 192.168.101.35 not Pinging
+01/29/2021 13:38:47 | 192.168.101.36 not Pinging
+01/29/2021 13:38:48 | 192.168.101.37 not Pinging
+01/29/2021 13:38:50 | 192.168.101.38 not Pinging
+01/29/2021 13:38:54 | 192.168.101.39 not Pinging
+01/29/2021 13:38:54 | 192.168.101.40 is Pinging
+01/29/2021 13:38:55 | 192.168.101.41 not Pinging
+01/29/2021 13:38:57 | 192.168.101.42 not Pinging
+01/29/2021 13:38:58 | 192.168.101.43 not Pinging
+01/29/2021 13:39:00 | 192.168.101.44 not Pinging
+01/29/2021 13:39:00 | 192.168.101.45 is Pinging
+01/29/2021 13:39:00 | 192.168.101.46 is Pinging
+01/29/2021 13:39:00 | 192.168.101.47 is Pinging
+01/29/2021 13:39:00 | 192.168.101.48 is Pinging
+01/29/2021 13:39:01 | 192.168.101.49 not Pinging
+01/29/2021 13:39:01 | 192.168.101.50 is Pinging
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> Start-Transcript -Path 'D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt' -Append
+
+$ServerName = Get-Content "D:\new_IT\Z_TMP\Scripts\PS\Ping\31_50.txt"  
+  
+foreach ($Server in $ServerName) {  
+    if (test-Connection -ComputerName $Server -Count 1 -Quiet ) {   
+        write-Host "$(Get-Date) | $Server is Pinging "  -ForegroundColor Green 
+    } 
+    else { 
+        "$(Get-Date) | $Server not Pinging"  
+    }      
+}
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt
+01/29/2021 13:39:58 | 192.168.101.31 not Pinging
+01/29/2021 13:40:00 | 192.168.101.32 not Pinging
+01/29/2021 13:40:00 | 192.168.101.33 is Pinging
+01/29/2021 13:40:02 | 192.168.101.34 not Pinging
+01/29/2021 13:40:03 | 192.168.101.35 not Pinging
+01/29/2021 13:40:05 | 192.168.101.36 not Pinging
+01/29/2021 13:40:06 | 192.168.101.37 not Pinging
+01/29/2021 13:40:08 | 192.168.101.38 not Pinging
+01/29/2021 13:40:11 | 192.168.101.39 not Pinging
+01/29/2021 13:40:11 | 192.168.101.40 is Pinging
+01/29/2021 13:40:12 | 192.168.101.41 not Pinging
+01/29/2021 13:40:14 | 192.168.101.42 not Pinging
+01/29/2021 13:40:15 | 192.168.101.43 not Pinging
+01/29/2021 13:40:17 | 192.168.101.44 not Pinging
+01/29/2021 13:40:17 | 192.168.101.45 is Pinging
+01/29/2021 13:40:17 | 192.168.101.46 is Pinging
+01/29/2021 13:40:17 | 192.168.101.47 is Pinging
+01/29/2021 13:40:17 | 192.168.101.48 is Pinging
+01/29/2021 13:40:18 | 192.168.101.49 not Pinging
+01/29/2021 13:40:18 | 192.168.101.50 is Pinging
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> Start-Transcript -Path 'D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt' -Append
+
+$ServerName = Get-Content "D:\new_IT\Z_TMP\Scripts\PS\Ping\31_50.txt"  
+  
+foreach ($Server in $ServerName) {  
+    if (test-Connection -ComputerName $Server -Count 1 -Quiet ) {   
+        write-Host "$(Get-Date) | $Server is Pinging "  -ForegroundColor Green 
+    } 
+    else { 
+        "$(Get-Date) | $Server not Pinging"  
+    }      
+}
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt
+01/29/2021 13:43:33 | 192.168.101.31 not Pinging
+01/29/2021 13:43:34 | 192.168.101.32 not Pinging
+01/29/2021 13:43:34 | 192.168.101.33 is Pinging
+01/29/2021 13:43:36 | 192.168.101.34 not Pinging
+01/29/2021 13:43:37 | 192.168.101.35 not Pinging
+01/29/2021 13:43:39 | 192.168.101.36 not Pinging
+01/29/2021 13:43:40 | 192.168.101.37 not Pinging
+01/29/2021 13:43:42 | 192.168.101.38 not Pinging
+01/29/2021 13:43:43 | 192.168.101.39 not Pinging
+01/29/2021 13:43:43 | 192.168.101.40 is Pinging
+01/29/2021 13:43:45 | 192.168.101.41 not Pinging
+01/29/2021 13:43:46 | 192.168.101.42 not Pinging
+01/29/2021 13:43:48 | 192.168.101.43 not Pinging
+01/29/2021 13:43:49 | 192.168.101.44 not Pinging
+01/29/2021 13:43:49 | 192.168.101.45 is Pinging
+01/29/2021 13:43:49 | 192.168.101.46 is Pinging
+01/29/2021 13:43:49 | 192.168.101.47 is Pinging
+01/29/2021 13:43:49 | 192.168.101.48 is Pinging
+01/29/2021 13:43:51 | 192.168.101.49 not Pinging
+01/29/2021 13:43:51 | 192.168.101.50 is Pinging
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> $cc = @("","","","","","")
+$cc[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\DevTypes"
+$cc[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\DevTypes"
+$cc[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\DevTypes"
+$cc[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\DevTypes"
+$cc[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\DevTypes"
+
+for($i=0; $i -lt 5; $i++){ Get-Clipboard -Format FileDropList | cp -Destination $cc[$i] }
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*01.xml |
+    Select-Object FullName #for display in console intruder file
+    #Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    Select-Object FullName #for display in console emty folder
+    #Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+FullName
+--------
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\CosemClient\CosemClient_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayer\DataLinkLayer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-15.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec47Transport\Iec47Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec47Transport\Iec47Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec47Transport\Iec47Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-20.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205697Transport\Iec6205697Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205697Transport\Iec6205697Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\Iec6205697Transport\Iec6205697Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ImageTransfer\ImageTransfer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ImageTransfer\ImageTransfer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ImageTransfer\ImageTransfer_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\PluginConnector\PluginConnector_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\PluginConnector\PluginConnector_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\PluginConnector\PluginConnector_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\PluginConnector\PluginConnector_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\PluginConnector\PluginConnector_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ProfReadForm\ProfReadForm_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ProfReadForm\ProfReadForm_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ProfReadForm\ProfReadForm_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\TestScriptConsole\TestScriptConsole_2021-01-28.xml
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\154 - CosemClient\154 - CosemClient_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\BleTransport\BleTransport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\BleTransport\BleTransport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\BleTransport\BleTransport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ConformanceChecker\ConformanceChecker_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ConformanceChecker\ConformanceChecker_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ConformanceChecker\ConformanceChecker_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayer\DataLinkLayer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataNotifications\DataNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataNotifications\DataNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DataNotifications\DataNotifications_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceCfgManager\DeviceCfgManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfigLite\DeviceConfigLite_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfigLite\DeviceConfigLite_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-19.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DevTypeRef\DevTypeRef_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\DirectReadout\DirectReadout_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\EventNotifications\EventNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\EventNotifications\EventNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\EventNotifications\EventNotifications_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec47Transport\Iec47Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec47Transport\Iec47Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec47Transport\Iec47Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-23.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-24.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205697Transport\Iec6205697Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205697Transport\Iec6205697Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205697Transport\Iec6205697Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\Iec6205697Transport\Iec6205697Transport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ImageTransfer\ImageTransfer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ImageTransfer\ImageTransfer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ImageTransfer\ImageTransfer_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\PluginConnector\PluginConnector_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\PluginConnector\PluginConnector_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\PluginConnector\PluginConnector_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\PluginConnector\PluginConnector_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\PluginConnector\PluginConnector_2021-01-28.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log\ProfReadForm\ProfReadForm_2021-01-18.xml
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\254 - CosemClient\254 - CosemClient_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\254 - CosemClient\254 - CosemClient_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\254 - CosemClient\254 - CosemClient_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\254 - CosemClient\254 - CosemClient_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\BleTransport\BleTransport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\BleTransport\BleTransport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\BleTransport\BleTransport_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\BleTransport\BleTransport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ConformanceChecker\ConformanceChecker_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ConformanceChecker\ConformanceChecker_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ConformanceChecker\ConformanceChecker_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayer\DataLinkLayer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayer\DataLinkLayer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayer\DataLinkLayer_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayer\DataLinkLayer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataNotifications\DataNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataNotifications\DataNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataNotifications\DataNotifications_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DataNotifications\DataNotifications_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceCfgManager\DeviceCfgManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceCfgManager\DeviceCfgManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceCfgManager\DeviceCfgManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceCfgManager\DeviceCfgManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfigLite\DeviceConfigLite_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfigLite\DeviceConfigLite_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceRequestManager\DeviceRequestManager_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceRequestManager\DeviceRequestManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DevTypeRef\DevTypeRef_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DevTypeRef\DevTypeRef_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DevTypeRef\DevTypeRef_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DevTypeRef\DevTypeRef_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DirectReadout\DirectReadout_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DirectReadout\DirectReadout_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DirectReadout\DirectReadout_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\DirectReadout\DirectReadout_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\EventNotifications\EventNotifications_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\EventNotifications\EventNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\EventNotifications\EventNotifications_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\EventNotifications\EventNotifications_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec47Transport\Iec47Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec47Transport\Iec47Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec47Transport\Iec47Transport_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec47Transport\Iec47Transport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205697Transport\Iec6205697Transport_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205697Transport\Iec6205697Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\Iec6205697Transport\Iec6205697Transport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ImageTransfer\ImageTransfer_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ImageTransfer\ImageTransfer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ImageTransfer\ImageTransfer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\PluginConnector\PluginConnector_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\PluginConnector\PluginConnector_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\PluginConnector\PluginConnector_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ProfReadForm\ProfReadForm_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ReadoutFilePlugin\ReadoutFilePlugin_2021-01-15.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ReadoutFilePlugin\ReadoutFilePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ReadoutFilePlugin\ReadoutFilePlugin_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log\ReadoutFilePlugin\ReadoutFilePlugin_2021-01-29.xml
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\BleTransport\BleTransport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\BleTransport\BleTransport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\ConformanceChecker\ConformanceChecker_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\ConformanceChecker\ConformanceChecker_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataNotifications\DataNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataNotifications\DataNotifications_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceCfgManager\DeviceCfgManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceCfgManager\DeviceCfgManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceCfgManager\DeviceCfgManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceCfgManager\DeviceCfgManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-19.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DevTypeRef\DevTypeRef_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DevTypeRef\DevTypeRef_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DevTypeRef\DevTypeRef_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DirectReadout\DirectReadout_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\EventNotifications\EventNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\EventNotifications\EventNotifications_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-2...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-21.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-22.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-22.xml.nfo
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-25.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205697Transport\Iec6205697Transport_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\ImageTransfer\ImageTransfer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\ImageTransfer\ImageTransfer_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\PluginConnector\PluginConnector_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\PluginConnector\PluginConnector_2021-01-19.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\PluginConnector\PluginConnector_2021-01-29.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\ProfReadForm\ProfReadForm_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\TestScriptConsole\TestScriptConsole_2021-01-26.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\TestScriptConsole\TestScriptConsole_2021-01-27.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\TestScriptConsole\TestScriptConsole_2021-01-28.xml
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\454 - CosemClient\454 - CosemClient_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\BleTransport\BleTransport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\ConformanceChecker\ConformanceChecker_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DataLinkLayer\DataLinkLayer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DataNotifications\DataNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DeviceCfgManager\DeviceCfgManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DeviceRequestManager\DeviceRequestManager_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DevTypeRef\DevTypeRef_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\DirectReadout\DirectReadout_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\EventNotifications\EventNotifications_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\Iec47Transport\Iec47Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\Iec6205646DirectTransportPlugin\Iec6205646DirectTransportPlugin_202...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\Iec6205646TcpTransportPlugin\Iec6205646TcpTransportPlugin_2021-01-1...
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\Iec6205697Transport\Iec6205697Transport_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\ImageTransfer\ImageTransfer_2021-01-18.xml
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log\PluginConnector\PluginConnector_2021-01-18.xml
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*01.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - 
+CosemClient_2021-01-22.xml: The process cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-22.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-22.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\354 - CosemClient\354 - CosemClient_2021-01-22.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml: The process cannot 
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayer\DataLinkLayer_2021-01-22.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-18.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-01-18.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-18.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-18.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceConfigLite\DeviceConfigLite_2021-01-18.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-18.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml: The 
+process cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml: The process cannot
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-22.xml' because it is being used by another
+process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml: The 
+process cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-29.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml: The process cannot
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\DeviceRequestManager\DeviceRequestManager_2021-01-29.xml' because it is being used by another
+process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-29.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml: The process cannot 
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec47Transport\Iec47Transport_2021-01-22.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log\Iec6205646TransportPlugin\Iec6205
+646TransportPlugin_2021-01-22.xml: The process cannot access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3
+\Log\Iec6205646TransportPlugin\Iec6205646TransportPlugin_2021-01-22.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-01-22.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*01.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*02.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\Asymm
+etricKeyExchangePlugin_2021-02-01.xml: The process cannot access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_3
+54_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-01.xml' because it is being used by another 
+process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-01.xml: The
+process cannot access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-01.xml' because it
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-01.xml: The process cannot 
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-01.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-01.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-01.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-01.xml: The process cannot access
+the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-01.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-01.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-01.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-01.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-02-01.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-02-01.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceCfgManager\DeviceCfgManager_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-01.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-01.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-01.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-01.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-02-01.xml: The process cannot access 
+the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-02-01.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-02-01.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DevTypeRef\DevTypeRef_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-02-01.xml: The process cannot 
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-02-01.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-02-01.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DirectReadout\DirectReadout_2021-02-01.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-02-01.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-02-01.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-01.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*02.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> Start-Transcript -Path 'D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt' -Append
+
+$ServerName = Get-Content "D:\new_IT\Z_TMP\Scripts\PS\Ping\31_50.txt"  
+  
+foreach ($Server in $ServerName) {  
+    if (test-Connection -ComputerName $Server -Count 1 -Quiet ) {   
+        write-Host "$(Get-Date) | $Server is Pinging "  -ForegroundColor Green 
+    } 
+    else { 
+        "$(Get-Date) | $Server not Pinging"  
+    }      
+}
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_31.txt
+02/02/2021 15:13:01 | 192.168.101.31 not Pinging
+02/02/2021 15:13:03 | 192.168.101.32 not Pinging
+02/02/2021 15:13:03 | 192.168.101.33 is Pinging
+02/02/2021 15:13:04 | 192.168.101.34 not Pinging
+02/02/2021 15:13:06 | 192.168.101.35 not Pinging
+02/02/2021 15:13:07 | 192.168.101.36 not Pinging
+02/02/2021 15:13:09 | 192.168.101.37 not Pinging
+02/02/2021 15:13:10 | 192.168.101.38 not Pinging
+02/02/2021 15:13:12 | 192.168.101.39 not Pinging
+02/02/2021 15:13:12 | 192.168.101.40 is Pinging
+02/02/2021 15:13:13 | 192.168.101.41 not Pinging
+02/02/2021 15:13:15 | 192.168.101.42 not Pinging
+02/02/2021 15:13:16 | 192.168.101.43 not Pinging
+02/02/2021 15:13:18 | 192.168.101.44 not Pinging
+02/02/2021 15:13:18 | 192.168.101.45 is Pinging
+02/02/2021 15:13:18 | 192.168.101.46 is Pinging
+02/02/2021 15:13:22 | 192.168.101.47 not Pinging
+02/02/2021 15:13:27 | 192.168.101.48 not Pinging
+02/02/2021 15:13:27 | 192.168.101.49 is Pinging
+02/02/2021 15:13:27 | 192.168.101.50 is Pinging
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> Start-Transcript -Path 'D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_11.txt' -Append
+
+$ServerName = Get-Content "D:\new_IT\Z_TMP\Scripts\PS\Ping\11_30.txt"  
+  
+foreach ($Server in $ServerName) {  
+    if (test-Connection -ComputerName $Server -Count 1 -Quiet ) {   
+        write-Host "$(Get-Date) | $Server is Pinging "  -ForegroundColor Green 
+    } 
+    else { 
+        "$(Get-Date) | $Server not Pinging"  
+    }      
+}
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_11.txt
+02/02/2021 15:13:33 | 192.168.101.11 is Pinging
+02/02/2021 15:13:33 | 192.168.101.12 is Pinging
+02/02/2021 15:13:35 | 192.168.101.13 not Pinging
+02/02/2021 15:13:36 | 192.168.101.14 not Pinging
+02/02/2021 15:13:36 | 192.168.101.15 is Pinging
+02/02/2021 15:13:38 | 192.168.101.16 not Pinging
+02/02/2021 15:13:39 | 192.168.101.17 not Pinging
+02/02/2021 15:13:41 | 192.168.101.18 not Pinging
+02/02/2021 15:13:41 | 192.168.101.19 is Pinging
+02/02/2021 15:13:41 | 192.168.101.20 is Pinging
+02/02/2021 15:13:42 | 192.168.101.21 not Pinging
+02/02/2021 15:13:44 | 192.168.101.22 not Pinging
+02/02/2021 15:13:45 | 192.168.101.23 not Pinging
+02/02/2021 15:13:47 | 192.168.101.24 not Pinging
+02/02/2021 15:13:47 | 192.168.101.25 is Pinging
+02/02/2021 15:13:48 | 192.168.101.26 not Pinging
+02/02/2021 15:13:50 | 192.168.101.27 not Pinging
+02/02/2021 15:13:50 | 192.168.101.28 is Pinging
+02/02/2021 15:13:51 | 192.168.101.29 not Pinging
+02/02/2021 15:13:53 | 192.168.101.30 not Pinging
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> Start-Transcript -Path 'D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_11.txt' -Append
+
+$ServerName = Get-Content "D:\new_IT\Z_TMP\Scripts\PS\Ping\11_30.txt"  
+  
+foreach ($Server in $ServerName) {  
+    if (test-Connection -ComputerName $Server -Count 1 -Quiet ) {   
+        write-Host "$(Get-Date) | $Server is Pinging "  -ForegroundColor Green 
+    } 
+    else { 
+        "$(Get-Date) | $Server not Pinging"  
+    }      
+}
+Transcript started, output file is D:\new_IT\Z_TMP\Scripts\PS\Ping\Ping_Result_11.txt
+02/02/2021 15:14:15 | 192.168.101.11 is Pinging
+02/02/2021 15:14:15 | 192.168.101.12 is Pinging
+02/02/2021 15:14:18 | 192.168.101.13 not Pinging
+02/02/2021 15:14:21 | 192.168.101.14 not Pinging
+02/02/2021 15:14:21 | 192.168.101.15 is Pinging
+02/02/2021 15:14:24 | 192.168.101.16 not Pinging
+02/02/2021 15:14:27 | 192.168.101.17 not Pinging
+02/02/2021 15:14:27 | 192.168.101.18 is Pinging
+02/02/2021 15:14:27 | 192.168.101.19 is Pinging
+02/02/2021 15:14:27 | 192.168.101.20 is Pinging
+02/02/2021 15:14:31 | 192.168.101.21 not Pinging
+02/02/2021 15:14:33 | 192.168.101.22 not Pinging
+02/02/2021 15:14:37 | 192.168.101.23 not Pinging
+02/02/2021 15:14:39 | 192.168.101.24 not Pinging
+02/02/2021 15:14:39 | 192.168.101.25 is Pinging
+02/02/2021 15:14:42 | 192.168.101.26 not Pinging
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> $cc = @("","","","","","")
+$cc[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\DevTypes"
+$cc[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\DevTypes"
+$cc[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\DevTypes"
+$cc[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\DevTypes"
+$cc[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\DevTypes"
+
+for($i=0; $i -lt 5; $i++){ Get-Clipboard -Format FileDropList | cp -Destination $cc[$i] }
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*03.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\Asymm
+etricKeyExchangePlugin_2021-02-02.xml: The process cannot access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_3
+54_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-02.xml' because it is being used by another 
+process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-02.xml: The
+process cannot access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\AsymmetricKeyExchangePlugin\AsymmetricKeyExchangePlugin_2021-02-02.xml' because it
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-02.xml: The process cannot 
+access the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-02.xml' 
+because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-02.xml: The process cannot access the file
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\BleTransport\BleTransport_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-02.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-02.xml: The process cannot access
+the file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\ConformanceChecker\ConformanceChecker_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-02.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-02.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataLinkLayerTcp\DataLinkLayerTcp_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-02.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-02.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DataNotifications\DataNotifications_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-02.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-02.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfigLite\DeviceConfigLite_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-02.xml' because it is 
+being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-02.xml: The process cannot access the
+file 'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\DeviceConfig_7_0\DeviceConfig_7_0_2021-02-02.xml' because it is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item 
+D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-02-02.xml: The process 
+cannot access the file 
+'D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log\EventNotifications\EventNotifications_2021-02-02.xml' because it 
+is being used by another process.
+At line:13 char:5
++     Remove-Item -Force -Recurse #for remove without displaying
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\new_IT\prog_..._2021-02-02.xml:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> #init path; remove file with exclude parameter
+$sp = @("","","","","")
+$sp[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log"
+$sp[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log"
+$sp[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log"
+$sp[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log"
+$sp[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log"
+
+for($i=0; $i -lt 5; $i++){
+    Write-Output "detect intruder file from path: $($sp[$i]) " "--> "
+    Get-ChildItem -Path $($sp[$i]+"\*\*xml*") -Recurse -Force -Exclude *_2021*02*03.xml |
+    #Select-Object FullName #for display in console intruder file
+    Remove-Item -Force -Recurse #for remove without displaying
+    echo ""
+    
+    #remove emty folder
+    
+    Write-Output "detect empty folder from path:  $($sp[$i]) " "--> "
+    Get-ChildItem -Path $sp[$i] -Recurse |
+    Where-Object {$_.PSIsContainer -eq $True} | 
+    Where-Object {($_.GetFiles().Count -eq 0) -and ($_.GetDirectories().Count -eq 0)} |
+    #Select-Object FullName #for display in console emty folder
+    Foreach-Object {Remove-Item $_.FullName -Recurse} #for remove without displaying
+    echo ""
+}
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\Log
+-->
+
+detect intruder file from path: D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+detect empty folder from path:  D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\Log
+-->
+
+PS C:\WINDOWS\system32\WindowsPowerShell\v1.0> $cc = @("","","","","","")
+$cc[0] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_0\DevTypes"
+$cc[1] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_1\DevTypes"
+$cc[2] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_2\DevTypes"
+$cc[3] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_3\DevTypes"
+$cc[4] = "D:\new_IT\prog_for_work\COSEM_Client\354\CC_354_4\DevTypes"
+
+for($i=0; $i -lt 5; $i++){ Get-Clipboard -Format FileDropList | cp -Destination $cc[$i] }
+
